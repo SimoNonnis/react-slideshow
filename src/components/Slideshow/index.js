@@ -28,7 +28,7 @@ export class Slideshow extends Component {
     const { total, current } = this.state;
 
     this.setState({
-      current: current + 1 === total ? 0 : current + 1
+      current: current + 1 !== total ? current + 1 : 0
     });
   };
 
